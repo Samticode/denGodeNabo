@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: 'Kalnia', serif;
+font-family: 'Plus Jakarta Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    color: var(--black);
+}
+
+:root {
+    --black: #1E1E1E;
+    --white: #F1F1F1;
+    --beigh: #DAD9D2;
+    --green: #171D03;
+    --brown: #56504E;
+
+}
+
+body {
+    background-color: var(--beigh);
+}
+
+/* -------------- */
+
+.navBar {
+    position: fixed;
+    top: 0;
+    background-color: rgba(234, 234, 234, 0.778);
+    height: 14vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    height: 100%;
+    width: 35%;
+    margin-left: 8%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-size: 1.25rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.logoIMG {
+    height: 100%;
+    margin-right: 15%;
+}
+
+/* -------------- */
