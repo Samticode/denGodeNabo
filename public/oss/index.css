@@ -29,6 +29,7 @@ html, body {
     --green: #171D03;
     --brown: #56504E;
 
+    --navbar-seethrough: #f1f1f157;
 }
 
 body {
@@ -46,7 +47,7 @@ section {
     scroll-snap-align: start;
 }
 
-p {
+p, a {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--black);
 }
@@ -58,19 +59,24 @@ p {
     z-index: 100;
     top: 0;
     
-    height: 14vh;
+    height: 10vh;
     width: 100%;
+    transition: ease-out 200ms;
     
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f1f1f187;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15%;
+}
+
+.logoIMG {
+    height: 95%;
 }
 
 .links {
     height: 100%;
-    width: 35%;
-    margin-left: 8%;
+    width: 40%;
+    margin-left: 20%;
     
     display: flex;
     justify-content: space-around;
@@ -80,9 +86,20 @@ p {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.logoIMG {
+.links a {
     height: 100%;
-    margin-right: 15%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: ease-in 300ms
+}
+
+.links a:hover {
+    border-bottom:3px solid var(--white);
 }
 
 /* -------------- */
@@ -128,7 +145,7 @@ p {
 .bubble1 {
     top: -15%;
     left: -10%;
-    width: 50vw;
+    width: 50vmax;
     background-image: url('./img/pexels-pixabay-259280.jpg');
     animation-delay: 0s;
 }
@@ -254,11 +271,64 @@ p {
 .pastworkText {
     color: var(--white);
 
-    font-size: 1.75rem;
+    font-size: 1.25vw;
     line-height: 50px;
 
     margin-left: 2%;
 }
+
+/* -------------- */
+
+.sponsorDiv {
+    background-color: var(--brown);
+}
+
+/* -------------- */
+
+.moreTextDiv {
+    position: absolute;
+    top: 12%;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    background-color: var(--white);
+}
+
+.moreText {
+    font-size: 1.25vw;
+    line-height: 50px;
+    letter-spacing: 2px;
+
+    padding: 1% 0;
+}
+
+.buttonDiv {
+    position: absolute;
+    top: 40%;
+
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonDiv a {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--green);
+
+    color: var(--white);
+    font-size: 1.5vw;
+
+    display: grid;
+    place-items: center;
+}
+
+
+/* -------------- */
 
 /* -------------- */
 
