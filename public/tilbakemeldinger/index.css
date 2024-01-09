@@ -9,6 +9,13 @@ font-family: 'Plus Jakarta Sans', sans-serif; */
 
     text-decoration: none;
     color: var(--black);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 :root {
@@ -16,44 +23,114 @@ font-family: 'Plus Jakarta Sans', sans-serif; */
     --white: #F1F1F1;
     --beigh: #DAD9D2;
     --green: #171D03;
+    --light-green: #242d06;
     --brown: #56504E;
 
+    --navbar-seethrough: #f1f1f157;
 }
 
 body {
     background-color: var(--beigh);
 }
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
+p, a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--black);
+}
+
 /* -------------- */
 
 .navBar {
     position: fixed;
+    z-index: 100;
     top: 0;
-    background-color: rgba(234, 234, 234, 0.778);
-    height: 14vh;
+    
+    height: 10vh;
     width: 100%;
+    background-color: var(--navbar-seethrough);
+    border-bottom: 0.5px solid var(--black);
+    transition: ease-out 200ms;
     
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15%;
+}
+
+.logoIMG {
+    height: 95%;
 }
 
 .links {
     height: 100%;
-    width: 35%;
-    margin-left: 8%;
+    width: 40%;
+    margin-left: 20%;
     
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-    font-size: 1.25rem;
+    font-size: 1vw;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.logoIMG {
+.links a {
     height: 100%;
-    margin-right: 15%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: ease-in 300ms
+}
+
+.links a:hover {
+    border-bottom:3px solid var(--white);
 }
 
 /* -------------- */
+
+section {
+    height: 90vh;
+    width: 100vw;
+    margin-top: 10vh;
+
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+section div {
+    height: 100%;
+    width: 100%;
+}
+
+.textDiv {
+
+}
+
+.feedbackDiv {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.feedbackDiv div {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card {
+    height: 95%;
+    width: 10vw;
+    margin: 2%;
+
+    border: #1E1E1E 1px solid;
+}
