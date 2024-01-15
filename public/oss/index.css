@@ -304,7 +304,51 @@ p, a, label, input, textarea, button {
 /* -------------- */
 
 .sponsorDiv {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 75%;
+    width: 100%;
     background-color: var(--brown);
+}
+
+.sponsorText {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+
+    color: var(--white);
+    font-size: 3vw;
+}
+.sponsorTextLine {
+    position: absolute;
+    top: 18%;
+    left: 0%;
+
+    height: 2px;
+    width: 30%;
+    background-color: var(--beigh);
+}
+
+
+.sponsorLogoGrid {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+    height: 60%;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsorLogo {
+    width: 80%;
+}
+.sponsorLogo:nth-child(3) {
+    width: 40%;
 }
 
 /* -------------- */
@@ -407,27 +451,6 @@ p, a, label, input, textarea, button {
     position: relative;
 }
 
-.imgLogoDiv {
-    position: absolute;
-    right: 12%;
-    top: 5%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 42%;
-    
-}
-.contactLogo {
-    width: 70%;
-}
-.contactCatchphrase {
-    color: var(--white);
-    font-family: 'Kalnia', serif;
-    font-size: 2.25vw;
-    font-weight: 700;
-}
 
 .contactUs {
     position: absolute;
@@ -509,6 +532,27 @@ button[type="submit"]:hover {
 }
 
 
+.imgLogoDiv {
+    position: absolute;
+    right: 12%;
+    top: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 42%;
+    
+}
+.contactLogo {
+    width: 70%;
+}
+.contactCatchphrase {
+    color: var(--white);
+    font-family: 'Kalnia', serif;
+    font-size: 2.25vw;
+    font-weight: 700;
+}
 
 .contactInfoDiv {
     position: absolute;
@@ -540,6 +584,17 @@ button[type="submit"]:hover {
     margin: 0 5%;
 }
 
+i {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+
+    color: var(--brown);
+    font-size: 3vw;
+}
+.fa-instagram {
+    right: 7%;
+}
 
 /* -------------- */
 
