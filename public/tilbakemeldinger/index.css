@@ -49,7 +49,9 @@ p, a, label, input, textarea, button {
     color: var(--black);
 }
 
+
 /* -------------- */
+
 
 .navBar {
     position: fixed;
@@ -99,7 +101,52 @@ p, a, label, input, textarea, button {
     border-bottom:3px solid var(--white);
 }
 
+
 /* -------------- */
+
+
+.spacingDiv {
+    height: 10vh;
+    width: 100%;
+}
+.mainDiv {
+    height: 90vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+    display: flex
+}
+
+.textDiv {
+    height: 100%;
+    width: 35%;
+}
+.feedbackTitle {
+    font-size: 3vw;
+    width: 100%;
+    padding: 20% 0 0 7%;
+}
+.feedbackTitleLine {
+    width: 60%;
+    height: 5px;
+
+    margin: 2% 0;
+    background-color: var(--green);
+}
+.feedbbackMainText {
+    font-size: 1.25vw;
+    width: 85%;
+    margin: 7% auto;
+}
+
+.feedbackContainer {
+
+}
+
+
+/* -------------- */
+
 
 .contactTextDiv {
     position: absolute;
@@ -285,3 +332,22 @@ i {
 
 
 /* -------------- */
+
+
+@keyframes slideLeftInfinitely {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+@keyframes slideRightInfinitely {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
