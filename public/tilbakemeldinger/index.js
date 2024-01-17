@@ -12,3 +12,22 @@ window.addEventListener('scroll', (e) => {
 });
 
 
+
+document.getElementById('submit').addEventListener('click', (e) => {
+    e.preventDefault();
+    let emailParm = {
+        from_name: document.getElementById('name').value,
+        from_phone: document.getElementById('number').value,
+        message: document.getElementById('message').value
+    }
+    console.log(emailParm);
+    clearInput()
+
+    location.reload();
+});
+
+function clearInput() {
+    document.getElementById('name').value = '';
+    document.getElementById('number').value = '';
+    document.getElementById('message').value = '';
+}
