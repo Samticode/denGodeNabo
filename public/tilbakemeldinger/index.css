@@ -115,7 +115,7 @@ p, a, label, input, textarea, button {
 
     position: relative;
     overflow: hidden;
-    display: flex
+    display: flex;
 }
 
 .textDiv {
@@ -161,6 +161,7 @@ p, a, label, input, textarea, button {
 
     p {
         opacity: 0.5;
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 200ms;
     }
     .reviewName {
         font-size: 2vw;
@@ -172,6 +173,9 @@ p, a, label, input, textarea, button {
         font-size: 1.25vw;
         color: var(--white);
         padding: 2vh 1vw 0;
+    }
+    .shortReviewText {
+        display: none;
     }
 }
 
@@ -213,25 +217,6 @@ p, a, label, input, textarea, button {
 
 /* -------------- */
 
-
-.contactTextDiv {
-    position: absolute;
-    bottom: 11%;
-
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    background-color: var(--white);
-}
-.contactText {
-    font-size: 1.25vw;
-    line-height: 45px;
-    letter-spacing: 2px;
-
-    padding: 1% 0;
-}
-
 .contactForm {
     position: absolute;
     bottom: 0;
@@ -245,6 +230,7 @@ p, a, label, input, textarea, button {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .contactForm > div {
     height: 100%;
     width: 100%;
@@ -416,4 +402,228 @@ i {
     100% {
         transform: translateX(100%);
     }
+}
+
+@media (max-width: 500px) {
+    .navBar {     
+        height: 10vh;
+        width: 100%;
+
+        gap: 0%;
+    }
+    
+    .dngLogo {
+        width: 25%;
+    }
+    .links {
+        width: 75%;
+        margin: 0;
+        
+        font-size: 3vw;
+    }
+
+
+    .mainDiv {
+        height: 90vh;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .textDiv {
+        height: 32%;
+        width: 100%;
+    }
+    .feedbackTitle {
+        font-size: 7vw;
+        width: 100%;
+        padding: 5% 0 0 7%;
+    }
+    .feedbackTitleLine {
+        width: 60%;
+        height: 1%;
+    
+        margin: 1% 0 4%;
+    }
+    .feedbbackMainText {
+        font-size: 3vw;
+        width: 95%;
+        margin: 0% auto 2%;
+    }
+        .feedbackContainer {
+            height: 68;
+            width: 100%;
+
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+        .card {
+            .reviewName {
+                font-size: 3vw;
+                padding: 2vh 0 0.5vh 2vw;
+            }
+            .reviewText {
+                display: none;
+            }
+            .shortReviewText {
+                display: inline-block;
+                color: var(--white);
+                margin: 10% 1%;
+            }
+        }
+        .card1, .card1:hover {
+            grid-row: 1 / span 3;
+            grid-column: 1 / span 3;
+        }
+        .card2, .card2:hover {
+            grid-row: 4 / span 5;
+            grid-column: 1 / span 3;
+        }
+        .card3, .card3:hover {
+            grid-row: 6 / span 3;
+            grid-column: 4 / span 3;
+        }
+        .card4, .card4:hover {
+            grid-row: 1 / span 5;
+            grid-column: 4 / span 3;
+        }
+        .card:hover {
+            height: 99%;
+            width: 99%;
+
+            .reviewName {
+                font-size: 3.5vw;
+            }
+            .shortReviewText {
+                font-size: 5vw;
+            }
+        }
+
+
+        .contactForm {
+            display: none;
+        }
+
+        .shortContactForm {
+            position: absolute;
+            bottom: 0;
+        
+            height: 88%;
+            width: 100%;
+            background-color: var(--green);
+            border-radius: 2em 2em 0 0;
+            overflow: hidden;
+        }
+        .shortContactForm > div {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .shortContactUs {
+            position: absolute;
+            top: 8%;
+            left: 8%;
+    
+            color: var(--white);
+            font: 600 5vw 'Plus Jakarta Sans', sans-serif;
+        }
+        .shortTextline {
+            position: absolute;
+            top: 12%;
+            height: 1px;
+            width: 45%;
+            background-color: var(--white);
+        }
+        .shortImgLogoDiv {
+            position: absolute;
+            right: 4%;
+            top: 2%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            width: 42%;
+
+            img {
+                width: 60%;
+            }
+            p {
+                color: var(--white);
+                font-size: 4.5vw;
+                font-weight: 700;
+                font-family: 'Kalnia', serif;
+            }
+        }
+
+        .shortContactMailDiv {
+            position: absolute;
+            bottom: 29%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            height: 55%;
+            width: 95%;
+            background-color: var(--light-green);
+
+            form {
+                height: 100%;
+                width: 100%;
+                position: relative;
+
+                label{
+                    font-size: 4vw;
+                }
+                input{
+
+                }
+            }
+        }
+        .shortTopPartDiv {
+            width: 100%;
+            height: 20%;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+        }
+
+        .shortContactInfoDiv {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+    
+            height: 23%;
+            width: 95%;
+            
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+
+            .shortContactName, .shortContactNumber {
+                font-size: 4vw;
+            }
+            .shortBindingLine {
+                font-weight: bold;
+                margin: 0 2vw;
+            }
+            .shortContactName, .shortContactNumber, .shortBindingLine {
+                color: var(--white);
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .fa-brands {
+            font-size: 7vw;
+        }
+        .fa-instagram {
+            right: 9%;
+        }
+
 }

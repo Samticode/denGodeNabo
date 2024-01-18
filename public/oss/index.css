@@ -109,7 +109,7 @@ p, a, label, input, textarea, button {
     top: 25%;
     left: 5%;
     width: 53vw;
-    height: 20vh;
+    aspect-ratio: 18/4;
     overflow: hidden;
     
     border-radius: 1vmax;
@@ -121,7 +121,7 @@ p, a, label, input, textarea, button {
     font-family: 'Kalnia', serif;
     font-weight: 300;
     font-size: 6vw;
-    letter-spacing: 7px;
+    letter-spacing: 0.25vw;
 }
 .catchphrase {
     font-family: 'Kalnia', serif;
