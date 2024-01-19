@@ -147,21 +147,21 @@ p, a, label, input, textarea, button {
     top: -15%;
     left: -10%;
     width: 50vmax;
-    background-image: url('./img/pexels-pixabay-259280.jpg');
+    background-image: url('./img/IMG_8735.JPG');
     animation-delay: 0s;
 }
 .bubble2 {
     top: 10%;
     right: -10%;
     width: 36vw;
-    background-image: url('./img/photo-1542273917363-3b1817f69a2d.avif');
+    background-image: url('./img/IMG_8727.JPG');
     animation-delay: 1s;
 }
 .bubble3 {
     bottom: -10%;
     left: 35%;
     width: 42vw;
-    background-image: url('./img/photo-1499529112087-3cb3b73cec95.avif');
+    background-image: url('./img/IMG_8728.JPG');
     animation-delay: 2s;
 }
 
@@ -260,19 +260,22 @@ p, a, label, input, textarea, button {
 }
 
 .carouselItem:nth-child(1) {
-    background-image: url('https://images.pexels.com/photos/697259/pexels-photo-697259.jpeg?cs=srgb&dl=pexels-hi%E1%BA%BFu-ho%C3%A0ng-697259.jpg&fm=jpg');
+    background-image: url('./img/IMG_8733.JPG');
 }
 .carouselItem:nth-child(2) {
-    background-image: url('https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg');
+    background-image: url('./img/IMG_8735.JPG');
 }
 .carouselItem:nth-child(3) {
-    background-image: url('https://i.pinimg.com/originals/96/42/1a/96421a97b83034f52c410befe7cefa20.jpg');
+    background-image: url('./img/IMG_8723.JPG');
 }
 .carouselItem:nth-child(4) {
-    background-image: url('https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg');
+    background-image: url('./img/IMG_8727.JPG');
 }
 .carouselItem:nth-child(5) {
-    background-image: url('https://i.pinimg.com/originals/84/64/e3/8464e3020574ef810d65db3358efb838.jpg');
+    background-image: url('./img/IMG_8801.jpeg');
+}
+.carouselItem:nth-child(6) {
+    background-image: url('./img/IMG_8802.jpeg');
 }
 
 .textDiv {
@@ -444,6 +447,11 @@ p, a, label, input, textarea, button {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.shortContactForm {
+    display: none;
+}
+
 .contactForm > div {
     height: 100%;
     width: 100%;
@@ -613,4 +621,359 @@ i {
     50% {
         transform: translateX(5%);
     }
+}
+
+
+@media (max-width: 500px) {
+    .navBar {     
+        height: 10vh;
+        width: 100%;
+
+        gap: 0%;
+    }
+    
+    .dngLogo {
+        width: 25%;
+    }
+    .links {
+        width: 75%;
+        margin: 0;
+        
+        font-size: 3vw;
+    }
+
+
+
+
+    .leaderTextDiv {
+        top: 20%;
+        left: 0%;
+        width: 100%;
+        aspect-ratio: 18/4;
+
+        .title {
+            font-size: 11.5vw;
+            letter-spacing: 0.5vw;
+        }
+        .catchphrase {
+            font-size: 3.5vw;
+        }
+    }
+    .bubble1 {
+        top: -5%;
+        left: -17%;
+        animation-delay: 0s;
+    }
+    .bubble2 {
+        top: 32%;
+        right: -3%;
+        width: 55vw;
+    }
+    .bubble3 {
+        bottom: 5%;
+        left: 15%;
+        width: 80vw;
+    }
+
+
+
+    .textBar {
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+
+        height: 32%;
+        width: 95%;
+
+        .memberInfo {
+            font-size: 4vw;
+            line-height: 3.2vh;
+            letter-spacing: 2px;
+        }
+    }
+    .pfp {
+        width: 40vw;
+    }
+    .pfp1 {
+        top: 12%;
+    }
+    .pfp2 {
+        top: 10%;
+        left: 55%;
+    }
+    .pfp3 {
+        z-index: 99;
+        bottom: 18%;
+        right: -5%;
+    }
+    .pfp4 {
+        bottom: 15%;
+        left: 0;
+    }
+    .pfp5 {
+        bottom: 10%;
+        left: 35%;
+    }
+
+
+
+    .carousel { 
+        top: 11%;
+        left: 0%;
+        transform: translateY(0%);
+
+        height: 45%;
+        width: 100%;
+    }
+    .textDiv {
+        top: 60%;
+        right: 0%;
+        transform: translateY(0%);
+
+        height: 30%;
+        width: 100%;
+        overflow-y: scroll;
+        display: block;
+
+        .pastworkText {
+            font-size: 3.9vw;
+            line-height: 3.2vh;
+            letter-spacing: 2px;
+        }
+    }
+
+
+
+
+    .sponsorText {
+        font-size: 10vw;
+        top: 4%;
+        left: 50%;
+        width: 80%;
+        transform: translateX(-50%);
+    }
+    .sponsorTextLine {
+        width: 75%;
+        height: 0.25%;
+        top: 12%;
+    }
+    .sponsorLogoGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .sponsorLogo {
+        width: 100%;
+    }
+    .sponsorLogo:nth-child(1) {
+        grid-column: 1;
+        grid-row:1 ;
+    }
+    .sponsorLogo:nth-child(2) {
+        grid-column: 3;
+        grid-row:1 ;
+    }
+    .sponsorLogo:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .sponsorLogo:nth-child(4) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .sponsorLogo:nth-child(5) {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+
+
+    .moreTextDiv {
+        height: 30%;
+        top: 22%;
+        height: auto;
+        
+        .moreText {
+            padding: 2% 0;
+            text-align: center;
+            font-size: 4vw;
+            line-height: 2.5vh;
+            letter-spacing: 1px;
+        }
+
+        br {
+            display: none;
+        }
+    }
+    .buttonDiv {
+        top: 60%;
+        
+        height: 22%;
+        
+        a {
+            font-size: 4vw;
+        }
+    }
+
+
+
+
+    .contactText {
+        top: 4%;
+        font-size: 4vw;
+        line-height: 3vh;
+    }
+    .brRemove {
+        display: none;
+    }
+
+
+
+
+        .contactForm {
+            display: none;
+        }
+
+        .shortContactForm {
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+        
+            height: 88%;
+            width: 100%;
+            background-color: var(--green);
+            border-radius: 2em 2em 0 0;
+            overflow: hidden;
+        }
+        .shortContactForm > div {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .shortContactUs {
+            position: absolute;
+            top: 8%;
+            left: 8%;
+    
+            color: var(--white);
+            font: 600 5vw 'Plus Jakarta Sans', sans-serif;
+        }
+        .shortTextline {
+            position: absolute;
+            top: 12%;
+            height: 1px;
+            width: 45%;
+            background-color: var(--white);
+        }
+        .shortImgLogoDiv {
+            position: absolute;
+            right: 4%;
+            top: 2%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            width: 42%;
+
+            img {
+                width: 60%;
+            }
+            p {
+                color: var(--white);
+                font-size: 4.5vw;
+                font-weight: 700;
+                font-family: 'Kalnia', serif;
+            }
+        }
+
+        .shortContactMailDiv {
+            position: absolute;
+            bottom: 28%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            height: 55%;
+            width: 95%;
+
+            form {
+                height: 97%;
+                width: 100%;
+                position: relative;
+
+                label{
+                    font-size: 3.5vw;
+                    display: block;
+                    line-height: 1vh;
+                }
+                input{
+                    font-size: 4vw;
+                    width: 95%;
+                    height: 10%;
+                    margin: 2% 0;
+                }
+                button {
+                    font-size: 4vw;
+                    width: 20%;
+                    bottom: 2%;
+                }
+                textarea {
+                    font-size: 3.5vw;
+                    width: 95%;
+                    height: 63%;
+                    margin: 2% 0;
+                }
+            }
+        }
+
+        form > div {
+            height: 100%;
+            width: 100%;
+        }
+        .shortTopPartDiv {
+            width: 100%;
+            height: 20%;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+        }
+
+        .shortContactInfoDiv {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+    
+            height: 23%;
+            width: 95%;
+            
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+
+            .shortContactName, .shortContactNumber {
+                font-size: 4vw;
+            }
+            .shortBindingLine {
+                font-weight: bold;
+                margin: 0 2vw;
+            }
+            .shortContactName, .shortContactNumber, .shortBindingLine {
+                color: var(--white);
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .fa-brands {
+            font-size: 7vw;
+        }
+        .fa-instagram {
+            right: 9%;
+        }
+
 }

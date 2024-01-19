@@ -12,6 +12,22 @@ window.addEventListener('scroll', (e) => {
 });
 
 
+document.getElementById('submitLong').addEventListener('click', (e) => {
+    e.preventDefault();
+    let emailParm = {
+        from_name: document.getElementById('nameLong').value,
+        from_phone: document.getElementById('numberLong').value,
+        message: document.getElementById('messageLong').value
+    }
+
+    emailjs.send('service_cde0kbq', 'template_np6rres', emailParm, "WuyFBDuOpJYoOisny")
+        .then(() => {
+            location.reload();
+            clearInput('nameLong', 'numberLong', 'messageLong');
+        }).catch((err) => {
+            console.error(err);
+        });
+});
 
 document.getElementById('submit').addEventListener('click', (e) => {
     e.preventDefault();
@@ -24,12 +40,14 @@ document.getElementById('submit').addEventListener('click', (e) => {
     emailjs.send('service_cde0kbq', 'template_np6rres', emailParm, "WuyFBDuOpJYoOisny")
         .then(() => {
             location.reload();
-            clearInput();
+            clearInput('name', 'number', 'message');
+        }).catch((err) => {
+            console.error(err);
         });
 });
 
-function clearInput() {
-    document.getElementById('name').value = '';
-    document.getElementById('number').value = '';
-    document.getElementById('message').value = '';
+function clearInput(one, two, three) {
+    document.getElementById(one).value = '';
+    document.getElementById(two).value = '';
+    document.getElementById(three).value = '';
 }

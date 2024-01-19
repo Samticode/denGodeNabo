@@ -10,11 +10,13 @@ function changeCarouselItem() {
         changeDisplays(indexCarouselItem)
     } else if (indexCarouselItem === 3) {
         changeDisplays(indexCarouselItem)
+    } else if (indexCarouselItem === 4) {
+        changeDisplays(indexCarouselItem)
     } else {
         changeDisplays(indexCarouselItem)
     }
     
-    indexCarouselItem = (indexCarouselItem + 1) % 5;
+    indexCarouselItem = (indexCarouselItem + 1) % 6;
     return;
 }
 
@@ -27,4 +29,4 @@ function changeDisplays(index) {
     return;
 }
 
-setInterval(changeCarouselItem, 4000);
+setInterval(changeCarouselItem, 2000);
