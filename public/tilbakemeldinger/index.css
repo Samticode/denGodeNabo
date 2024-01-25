@@ -441,18 +441,18 @@ i {
     .feedbackTitle {
         font-size: 7vw;
         width: 100%;
-        padding: 5% 0 0 7%;
+        padding: 5% 0 0 6%;
     }
     .feedbackTitleLine {
         width: 60%;
         height: 1%;
     
-        margin: 1% 0 4%;
+        margin: 1% 0 3%;
     }
     .feedbbackMainText {
         font-size: 3vw;
         width: 95%;
-        margin: 0% auto 2%;
+        margin: 0% auto 4%;
     }
         .feedbackContainer {
             height: 68;
