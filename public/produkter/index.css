@@ -85,6 +85,10 @@ p, a, label, input, textarea, button {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.linkks, a:nth-child(3) {
+    color: var(--white);
+}
+
 .links a {
     height: 100%;
     width: 100%;
@@ -99,6 +103,74 @@ p, a, label, input, textarea, button {
 
 .links a:hover {
     border-bottom:3px solid var(--white);
+}
+
+/* -------------- */
+
+
+.mainTextDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+
+    width: 50%;
+    aspect-ratio: 19/9;
+    border-radius: 1em;
+    backdrop-filter: blur(10px);
+    background-color: rgba(244, 239, 239, 0.502);
+}
+
+.mainText {
+    width: 80%;
+    font-size: 1.25vw;
+    margin: 15% auto 0;
+}
+
+
+
+.bubble {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+
+    animation: scale 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    z-index: 30;
+}
+
+.bubble1 {
+    top: -15%;
+    left: -50%;
+    width: 75vmax;
+    background-color: var(--brown);
+    animation-delay: 0s;
+}
+.bubble2 {
+    top: -15%;
+    right: -45%;
+    width: 75vmax;
+    background-color: var(--black);
+    animation-delay: 0s;
+}
+.bubble3 {
+    z-index: -1;
+    bottom: -22%;
+    right: 5%;
+    width: 42vw;
+    background-color: var(--light-green);
+    animation-delay: 1s;
+}
+.bubble4 {
+    z-index: -1;
+    top: -20%;
+    left: 5%;
+    width: 32vw;
+    background-color: var(--green);
+    animation-delay: 1s;
 }
 
 /* -------------- */
@@ -293,6 +365,15 @@ i {
 
 /* -------------- */
 
+@keyframes scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.97);
+    }
+}
+
 @media (max-width: 500px) {
     .navBar {     
         height: 10vh;
@@ -311,6 +392,44 @@ i {
         font-size: 3vw;
     }
 
+
+    .mainTextDiv {
+        width: 90%;
+        aspect-ratio: 2/1;
+    }
+    .mainText {
+        margin: 5% auto 0;
+        font-size: 3vw;
+    }
+
+    .bubble1 {
+        top: -15%;
+        left: -70%;
+
+        width: 150vw;
+    }
+    .bubble2 {
+        z-index: -5000;
+        top: -15%;
+        right: -35%;
+
+        width: 75vw;
+    }
+    .bubble3 {
+        bottom: -22%;
+        right: -70%;
+
+        width: 150vw;
+    }
+    .bubble4 {
+        z-index: -50000;
+        top: 75%;
+        left: -30%;
+
+        width: 75vw;
+    }
+
+    
 
     .contactForm {
         display: none;
