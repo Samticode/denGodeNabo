@@ -1,9 +1,20 @@
 const thirdATag = document.querySelector('a:nth-child(3)');
+const links = document.querySelectorAll('.linksss');
 
-window.addEventListener('scroll', (e) => {
+function changeColorOnScroll(element) {
     if (window.scrollY > 120) {
-        thirdATag.style.color = 'var(--black)';
+        element.style.color = 'var(--black)';
     } else {
-        thirdATag.style.color = 'var(--white)';
+        element.style.color = 'var(--white)';
+    }
+}
+
+window.addEventListener('scroll', () => {
+    changeColorOnScroll(thirdATag);
+
+    if (window.innerWidth < 500) {
+        links.forEach(link => {
+            changeColorOnScroll(link);
+        });
     }
 });
