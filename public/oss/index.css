@@ -315,7 +315,7 @@ p, a, label, input, textarea, button {
     background-color: var(--brown);
 }
 
-.sponsorText {
+.sponsorTexttt{
     position: absolute;
     top: 8%;
     left: 6%;
@@ -746,7 +746,7 @@ i {
 
 
 
-    .sponsorText {
+    .sponsorTexttt{
         font-size: 10vw;
         top: 4%;
         left: 50%;
