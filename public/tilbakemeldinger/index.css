@@ -145,8 +145,8 @@ p, a, label, input, textarea, button {
     width: 65%;
 
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     place-items: center;
 }
 .card {
@@ -180,37 +180,36 @@ p, a, label, input, textarea, button {
 }
 
 .card1 {
-    grid-row: 1 / span 3;
-    grid-column: 3 / span 3;
+    grid-row: 1 / span 6;
+    grid-column: 5 / span 6;
 }
 .card2 {
-    grid-row: 1 / span 4;
-    grid-column: 6 / span 3;
+    grid-row: 1 / span 6;
+    grid-column: 11 / span 6;
 }
 .card3 {
-    grid-row: 5 / span 2;
-    grid-column: 4 / span 4;
+    grid-row: 8 / span 4;
+    grid-column: 5 / span 12;
 }
 .card4 {
-    grid-row: 3 / span 3;
-    grid-column: 1 / span 2;
+    grid-row: 2 / span 7;
+    grid-column: 1 / span 4;
 }
 .card:hover {
     height: 96.5%;
     width: 96.5%;
-    grid-row: 2 / span 4;
-    grid-column: 2 / span 6;
     z-index: 1;
+    scale: 1.05;
 
     p {
         opacity: 1;
     }
 
     .reviewName {
-        font-size: 3vw;
+
     }
     .reviewText {
-        font-size: 1.3vw;
+
         padding: 3vh 1vw;
     }
 }
