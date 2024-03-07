@@ -37,8 +37,8 @@ html{
     scroll-snap-type: y mandatory;
 }
 section {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     position: relative;
     overflow: hidden;
     scroll-snap-align: start;
@@ -56,7 +56,7 @@ p, a, label, input, textarea, button {
     z-index: 100;
     top: 0;
     
-    height: 10vh;
+    height: 10dvh;
     width: 100%;
     transition: ease-out 200ms;
     
@@ -81,7 +81,7 @@ p, a, label, input, textarea, button {
     justify-content: space-around;
     align-items: center;
     
-    font-size: 1vw;
+    font-size: 1dvw;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -124,7 +124,7 @@ p, a, label, input, textarea, button {
 
 .mainText {
     width: 80%;
-    font-size: 1.25vw;
+    font-size: 1.25dvw;
     margin: 15% auto 0;
 }
 
@@ -160,7 +160,7 @@ p, a, label, input, textarea, button {
     z-index: -1;
     bottom: -22%;
     right: 5%;
-    width: 42vw;
+    width: 42dvw;
     background-color: var(--light-green);
     animation-delay: 1s;
 }
@@ -168,7 +168,7 @@ p, a, label, input, textarea, button {
     z-index: -1;
     top: -20%;
     left: 5%;
-    width: 32vw;
+    width: 32dvw;
     background-color: var(--green);
     animation-delay: 1s;
 }
@@ -186,7 +186,7 @@ p, a, label, input, textarea, button {
     background-color: var(--white);
 }
 .contactText {
-    font-size: 1.25vw;
+    font-size: 1.25dvw;
     line-height: 45px;
     letter-spacing: 2px;
 
@@ -224,7 +224,7 @@ p, a, label, input, textarea, button {
     left: 12%;
 
     color: var(--white);
-    font: 600 2.5vw 'Plus Jakarta Sans', sans-serif;
+    font: 600 2.5dvw 'Plus Jakarta Sans', sans-serif;
 }
 .textline {
     position: absolute;
@@ -248,11 +248,11 @@ form {
 }
 label {
     color: var(--white);
-    font-size: 1vw;
+    font-size: 1dvw;
     letter-spacing: 2px;
 }
 input {
-    font-size: 1.5vw;
+    font-size: 1.5dvw;
 }
 
 .topPartDiv {
@@ -268,9 +268,9 @@ label[for="message"] {
 }
 textarea {
     margin-left: 1%;
-    font-size: 1.25vw;
+    font-size: 1.25dvw;
     width: 98%;
-    height: 45vh;
+    height: 45dvh;
 }
 button[type="submit"] {
     position: absolute;
@@ -282,7 +282,7 @@ button[type="submit"] {
     border-radius: 5em;
     background-color: var(--white);
     color: var(--green);
-    font-size: 1.25vw;
+    font-size: 1.25dvw;
     font-weight: 700;
     letter-spacing: 2px;
 
@@ -316,7 +316,7 @@ button[type="submit"]:hover {
 .contactCatchphrase {
     color: var(--white);
     font-family: 'Kalnia', serif;
-    font-size: 2.25vw;
+    font-size: 2.25dvw;
     font-weight: 700;
 }
 
@@ -341,11 +341,11 @@ button[type="submit"]:hover {
 }
 .contactName, .contactNumber, .bindingLine {
     color: var(--white);
-    font-size: 1.75vw;
+    font-size: 1.75dvw;
     letter-spacing: 2px;
 }
 .bindingLine {
-    font-size: 2vw;
+    font-size: 2dvw;
     font-weight: 700;
     margin: 0 5%;
 }
@@ -356,7 +356,7 @@ i {
     right: 1%;
 
     color: var(--brown);
-    font-size: 3vw;
+    font-size: 3dvw;
 }
 .fa-instagram {
     right: 7%;
@@ -376,7 +376,7 @@ i {
 
 @media (max-width: 500px) {
     .navBar {     
-        height: 10vh;
+        height: 10dvh;
         width: 100%;
 
         gap: 0%;
@@ -389,7 +389,7 @@ i {
         width: 75%;
         margin: 0;
         
-        font-size: 3vw;
+        font-size: 3dvw;
     }
     .linksss {
         color: var(--white);
@@ -402,34 +402,34 @@ i {
     }
     .mainText {
         margin: 5% auto 0;
-        font-size: 3vw;
+        font-size: 3dvw;
     }
 
     .bubble1 {
         top: -15%;
         left: -70%;
 
-        width: 150vw;
+        width: 150dvw;
     }
     .bubble2 {
         z-index: -5000;
         top: -15%;
         right: -35%;
 
-        width: 75vw;
+        width: 75dvw;
     }
     .bubble3 {
         bottom: -22%;
         right: -70%;
 
-        width: 150vw;
+        width: 150dvw;
     }
     .bubble4 {
         z-index: -50000;
         top: 75%;
         left: -30%;
 
-        width: 75vw;
+        width: 75dvw;
     }
 
     
@@ -461,7 +461,7 @@ i {
         left: 8%;
 
         color: var(--white);
-        font: 600 5vw 'Plus Jakarta Sans', sans-serif;
+        font: 600 5dvw 'Plus Jakarta Sans', sans-serif;
     }
     .shortTextline {
         position: absolute;
@@ -486,7 +486,7 @@ i {
         }
         p {
             color: var(--white);
-            font-size: 4.5vw;
+            font-size: 4.5dvw;
             font-weight: 700;
             font-family: 'Kalnia', serif;
         }
@@ -507,23 +507,23 @@ i {
             position: relative;
 
             label{
-                font-size: 3.5vw;
+                font-size: 3.5dvw;
                 display: block;
-                line-height: 1vh;
+                line-height: 1dvh;
             }
             input{
-                font-size: 4vw;
+                font-size: 4dvw;
                 width: 95%;
                 height: 10%;
                 margin: 2% 0;
             }
             button {
-                font-size: 4vw;
+                font-size: 4dvw;
                 width: 20%;
                 bottom: 2%;
             }
             textarea {
-                font-size: 3.5vw;
+                font-size: 3.5dvw;
                 width: 95%;
                 height: 63%;
                 margin: 2% 0;
@@ -557,11 +557,11 @@ i {
         grid-template-rows: repeat(5, 1fr);
 
         .shortContactName, .shortContactNumber {
-            font-size: 4vw;
+            font-size: 4dvw;
         }
         .shortBindingLine {
             font-weight: bold;
-            margin: 0 2vw;
+            margin: 0 2dvw;
         }
         .shortContactName, .shortContactNumber, .shortBindingLine {
             color: var(--white);
@@ -575,7 +575,7 @@ i {
     }
 
     .fa-brands {
-        font-size: 7vw;
+        font-size: 7dvw;
     }
     .fa-instagram {
         right: 9%;

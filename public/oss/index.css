@@ -37,8 +37,8 @@ html{
     scroll-snap-type: y mandatory;
 }
 section {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     position: relative;
     overflow: hidden;
     scroll-snap-align: start;
@@ -56,7 +56,7 @@ p, a, label, input, textarea, button {
     z-index: 100;
     top: 0;
     
-    height: 10vh;
+    height: 10dvh;
     width: 100%;
     transition: ease-out 200ms;
     
@@ -81,7 +81,7 @@ p, a, label, input, textarea, button {
     justify-content: space-around;
     align-items: center;
     
-    font-size: 1vw;
+    font-size: 1dvw;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -108,7 +108,7 @@ p, a, label, input, textarea, button {
     z-index: 40;
     top: 25%;
     left: 5%;
-    width: 53vw;
+    width: 53dvw;
     aspect-ratio: 18/4;
     overflow: hidden;
     
@@ -120,13 +120,13 @@ p, a, label, input, textarea, button {
 .title {
     font-family: 'Kalnia', serif;
     font-weight: 300;
-    font-size: 6vw;
-    letter-spacing: 0.25vw;
+    font-size: 6dvw;
+    letter-spacing: 0.25dvw;
 }
 .catchphrase {
     font-family: 'Kalnia', serif;
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1.5dvw;
 
     margin-left: 5%;
 }
@@ -153,14 +153,14 @@ p, a, label, input, textarea, button {
 .bubble2 {
     top: 10%;
     right: -10%;
-    width: 36vw;
+    width: 36dvw;
     background-image: url('./img/IMG_8727.JPG');
     animation-delay: 1s;
 }
 .bubble3 {
     bottom: -10%;
     left: 35%;
-    width: 42vw;
+    width: 42dvw;
     background-image: url('./img/IMG_8728.JPG');
     animation-delay: 2s;
 }
@@ -182,8 +182,8 @@ p, a, label, input, textarea, button {
 }
 
 .memberInfo {
-    font-size: 1.35vw;
-    line-height: 4.5vh;
+    font-size: 1.35dvw;
+    line-height: 4.5dvh;
     letter-spacing: 2px;
 
     margin: 0 2% 0 auto;
@@ -200,7 +200,7 @@ p, a, label, input, textarea, button {
     border-radius: 50%;
     z-index: 50;
 
-    width: 17.5vw;
+    width: 17.5dvw;
 
     animation: move 6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
 }
@@ -240,7 +240,7 @@ p, a, label, input, textarea, button {
     z-index: 40;
 
     height: 72%;
-    width: 50vw;
+    width: 50dvw;
     background-color: var(--black);
 }
 
@@ -297,8 +297,8 @@ p, a, label, input, textarea, button {
 .pastworkText {
     color: var(--white);
 
-    font-size: 1.25vw;
-    line-height: 4.25vh;
+    font-size: 1.25dvw;
+    line-height: 4.25dvh;
 
     margin-left: 2%;
 }
@@ -322,7 +322,7 @@ p, a, label, input, textarea, button {
 
     color: var(--white);
     font-family: 'Plus Jakarta Sans', sans-serif; 
-    font-size: 3vw;
+    font-size: 3dvw;
 }
 .sponsorTextLine {
     position: absolute;
@@ -368,8 +368,8 @@ p, a, label, input, textarea, button {
 }
 
 .moreText {
-    font-size: 1.25vw;
-    line-height: 4.5vh;
+    font-size: 1.25dvw;
+    line-height: 4.5dvh;
     letter-spacing: 2px;
 
     padding: 1% 0;
@@ -393,7 +393,7 @@ p, a, label, input, textarea, button {
     border-radius: 5%;
 
     color: var(--white);
-    font-size: 1.5vw;
+    font-size: 1.5dvw;
 
     display: grid;
     place-items: center;
@@ -428,7 +428,7 @@ p, a, label, input, textarea, button {
     background-color: var(--white);
 }
 .contactText {
-    font-size: 1.25vw;
+    font-size: 1.25dvw;
     line-height: 45px;
     letter-spacing: 2px;
 
@@ -466,7 +466,7 @@ p, a, label, input, textarea, button {
     left: 12%;
 
     color: var(--white);
-    font: 600 2.5vw 'Plus Jakarta Sans', sans-serif;
+    font: 600 2.5dvw 'Plus Jakarta Sans', sans-serif;
 }
 .textline {
     position: absolute;
@@ -490,11 +490,11 @@ form {
 }
 label {
     color: var(--white);
-    font-size: 1vw;
+    font-size: 1dvw;
     letter-spacing: 2px;
 }
 input {
-    font-size: 1.5vw;
+    font-size: 1.5dvw;
 }
 
 .topPartDiv {
@@ -510,9 +510,9 @@ label[for="message"] {
 }
 textarea {
     margin-left: 1%;
-    font-size: 1.25vw;
+    font-size: 1.25dvw;
     width: 98%;
-    height: 45vh;
+    height: 45dvh;
 }
 button[type="submit"] {
     position: absolute;
@@ -524,7 +524,7 @@ button[type="submit"] {
     border-radius: 5em;
     background-color: var(--white);
     color: var(--green);
-    font-size: 1.25vw;
+    font-size: 1.25dvw;
     font-weight: 700;
     letter-spacing: 2px;
 
@@ -558,7 +558,7 @@ button[type="submit"]:hover {
 .contactCatchphrase {
     color: var(--white);
     font-family: 'Kalnia', serif;
-    font-size: 2.25vw;
+    font-size: 2.25dvw;
     font-weight: 700;
 }
 
@@ -583,11 +583,11 @@ button[type="submit"]:hover {
 }
 .contactName, .contactNumber, .bindingLine {
     color: var(--white);
-    font-size: 1.75vw;
+    font-size: 1.75dvw;
     letter-spacing: 2px;
 }
 .bindingLine {
-    font-size: 2vw;
+    font-size: 2dvw;
     font-weight: 700;
     margin: 0 5%;
 }
@@ -598,7 +598,7 @@ i {
     right: 1%;
 
     color: var(--brown);
-    font-size: 3vw;
+    font-size: 3dvw;
 }
 .fa-instagram {
     right: 7%;
@@ -627,7 +627,7 @@ i {
 
 @media (max-width: 500px) {
     .navBar {     
-        height: 10vh;
+        height: 10dvh;
         width: 100%;
 
         gap: 0%;
@@ -640,7 +640,7 @@ i {
         width: 75%;
         margin: 0;
         
-        font-size: 3vw;
+        font-size: 3dvw;
     }
 
 
@@ -653,11 +653,11 @@ i {
         aspect-ratio: 18/4;
 
         .title {
-            font-size: 11.5vw;
-            letter-spacing: 0.5vw;
+            font-size: 11.5dvw;
+            letter-spacing: 0.5dvw;
         }
         .catchphrase {
-            font-size: 3.5vw;
+            font-size: 3.5dvw;
         }
     }
     .bubble1 {
@@ -668,12 +668,12 @@ i {
     .bubble2 {
         top: 32%;
         right: -3%;
-        width: 55vw;
+        width: 55dvw;
     }
     .bubble3 {
         bottom: 5%;
         left: 15%;
-        width: 80vw;
+        width: 80dvw;
     }
 
 
@@ -687,13 +687,13 @@ i {
         width: 95%;
 
         .memberInfo {
-            font-size: 4vw;
-            line-height: 3.2vh;
+            font-size: 4dvw;
+            line-height: 3.2dvh;
             letter-spacing: 2px;
         }
     }
     .pfp {
-        width: 40vw;
+        width: 40dvw;
     }
     .pfp1 {
         top: 12%;
@@ -737,8 +737,8 @@ i {
         display: block;
 
         .pastworkText {
-            font-size: 3.9vw;
-            line-height: 3.2vh;
+            font-size: 3.9dvw;
+            line-height: 3.2dvh;
             letter-spacing: 2px;
         }
     }
@@ -747,7 +747,7 @@ i {
 
 
     .sponsorTexttt {
-        font-size: 10vw;
+        font-size: 10dvw;
         top: 4%;
         left: 50%;
         width: 80%;
@@ -796,8 +796,8 @@ i {
         .moreText {
             padding: 2% 0;
             text-align: center;
-            font-size: 4vw;
-            line-height: 2.5vh;
+            font-size: 4dvw;
+            line-height: 2.5dvh;
             letter-spacing: 1px;
         }
 
@@ -811,7 +811,7 @@ i {
         height: 22%;
         
         a {
-            font-size: 4vw;
+            font-size: 4dvw;
         }
     }
 
@@ -820,8 +820,8 @@ i {
 
     .contactText {
         top: 4%;
-        font-size: 4vw;
-        line-height: 3vh;
+        font-size: 4dvw;
+        line-height: 3dvh;
     }
     .brRemove {
         display: none;
@@ -857,7 +857,7 @@ i {
             left: 8%;
     
             color: var(--white);
-            font: 600 5vw 'Plus Jakarta Sans', sans-serif;
+            font: 600 5dvw 'Plus Jakarta Sans', sans-serif;
         }
         .shortTextline {
             position: absolute;
@@ -882,7 +882,7 @@ i {
             }
             p {
                 color: var(--white);
-                font-size: 4.5vw;
+                font-size: 4.5dvw;
                 font-weight: 700;
                 font-family: 'Kalnia', serif;
             }
@@ -903,23 +903,23 @@ i {
                 position: relative;
 
                 label{
-                    font-size: 3.5vw;
+                    font-size: 3.5dvw;
                     display: block;
-                    line-height: 1vh;
+                    line-height: 1dvh;
                 }
                 input{
-                    font-size: 4vw;
+                    font-size: 4dvw;
                     width: 95%;
                     height: 10%;
                     margin: 2% 0;
                 }
                 button {
-                    font-size: 4vw;
+                    font-size: 4dvw;
                     width: 20%;
                     bottom: 2%;
                 }
                 textarea {
-                    font-size: 3.5vw;
+                    font-size: 3.5dvw;
                     width: 95%;
                     height: 63%;
                     margin: 2% 0;
@@ -953,11 +953,11 @@ i {
             grid-template-rows: repeat(5, 1fr);
 
             .shortContactName, .shortContactNumber {
-                font-size: 4vw;
+                font-size: 4dvw;
             }
             .shortBindingLine {
                 font-weight: bold;
-                margin: 0 2vw;
+                margin: 0 2dvw;
             }
             .shortContactName, .shortContactNumber, .shortBindingLine {
                 color: var(--white);
@@ -971,7 +971,7 @@ i {
         }
 
         .fa-brands {
-            font-size: 7vw;
+            font-size: 7dvw;
         }
         .fa-instagram {
             right: 9%;
