@@ -37,8 +37,8 @@ html{
     scroll-snap-type: y mandatory;
 }
 section {
-    height: 100dvh;
-    width: 100dvw;
+    height: 100vh;
+    width: 100vw;
     position: relative;
     overflow: hidden;
     scroll-snap-align: start;
@@ -58,7 +58,7 @@ p, a, label, input, textarea, button {
     z-index: 100;
     top: 0;
     
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
     transition: ease-out 200ms;
     
@@ -81,7 +81,7 @@ p, a, label, input, textarea, button {
     justify-content: space-around;
     align-items: center;
     
-    font-size: 1dvw;
+    font-size: 1vw;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -106,11 +106,11 @@ p, a, label, input, textarea, button {
 
 
 .spacingDiv {
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
 }
 .mainDiv {
-    height: 90dvh;
+    height: 90vh;
     width: 100%;
 
     position: relative;
@@ -123,7 +123,7 @@ p, a, label, input, textarea, button {
     width: 35%;
 }
 .feedbackTitle {
-    font-size: 3dvw;
+    font-size: 3vw;
     width: 100%;
     padding: 20% 0 0 7%;
 }
@@ -135,7 +135,7 @@ p, a, label, input, textarea, button {
     background-color: var(--green);
 }
 .feedbbackMainText {
-    font-size: 1.25dvw;
+    font-size: 1.25vw;
     width: 85%;
     margin: 7% auto;
 }
@@ -164,15 +164,15 @@ p, a, label, input, textarea, button {
         transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 200ms;
     }
     .reviewName {
-        font-size: 2dvw;
+        font-size: 2vw;
         color: var(--white);
-        padding: 2dvh 0  2dvh 2dvw;
+        padding: 2vh 0  2vh 2vw;
         border-bottom: var(--white) 2px solid;
     }
     .reviewText {
-        font-size: 1.25dvw;
+        font-size: 1.25vw;
         color: var(--white);
-        padding: 2dvh 1dvw 0;
+        padding: 2vh 1vw 0;
     }
     .shortReviewText {
         display: none;
@@ -210,7 +210,7 @@ p, a, label, input, textarea, button {
     }
     .reviewText {
 
-        padding: 3dvh 1dvw;
+        padding: 3vh 1vw;
     }
 }
 
@@ -247,7 +247,7 @@ p, a, label, input, textarea, button {
     left: 12%;
 
     color: var(--white);
-    font: 600 2.5dvw 'Plus Jakarta Sans', sans-serif;
+    font: 600 2.5vw 'Plus Jakarta Sans', sans-serif;
 }
 .textline {
     position: absolute;
@@ -271,11 +271,11 @@ form {
 }
 label {
     color: var(--white);
-    font-size: 1dvw;
+    font-size: 1vw;
     letter-spacing: 2px;
 }
 input {
-    font-size: 1.5dvw;
+    font-size: 1.5vw;
 }
 
 .topPartDiv {
@@ -291,9 +291,9 @@ label[for="message"] {
 }
 textarea {
     margin-left: 1%;
-    font-size: 1.25dvw;
+    font-size: 1.25vw;
     width: 98%;
-    height: 45dvh;
+    height: 45vh;
 }
 button[type="submit"] {
     position: absolute;
@@ -305,7 +305,7 @@ button[type="submit"] {
     border-radius: 5em;
     background-color: var(--white);
     color: var(--green);
-    font-size: 1.25dvw;
+    font-size: 1.25vw;
     font-weight: 700;
     letter-spacing: 2px;
 
@@ -339,7 +339,7 @@ button[type="submit"]:hover {
 .contactCatchphrase {
     color: var(--white);
     font-family: 'Kalnia', serif;
-    font-size: 2.25dvw;
+    font-size: 2.25vw;
     font-weight: 700;
 }
 
@@ -364,11 +364,11 @@ button[type="submit"]:hover {
 }
 .contactName, .contactNumber, .bindingLine {
     color: var(--white);
-    font-size: 1.75dvw;
+    font-size: 1.75vw;
     letter-spacing: 2px;
 }
 .bindingLine {
-    font-size: 2dvw;
+    font-size: 2vw;
     font-weight: 700;
     margin: 0 5%;
 }
@@ -379,7 +379,7 @@ i {
     right: 1%;
 
     color: var(--brown);
-    font-size: 3dvw;
+    font-size: 3vw;
 }
 .fa-instagram {
     right: 7%;
@@ -409,7 +409,7 @@ i {
 
 @media (max-width: 500px) {
     .navBar {     
-        height: 10dvh;
+        height: 10vh;
         width: 100%;
 
         gap: 0%;
@@ -422,12 +422,12 @@ i {
         width: 75%;
         margin: 0;
         
-        font-size: 3dvw;
+        font-size: 3vw;
     }
 
 
     .mainDiv {
-        height: 90dvh;
+        height: 90vh;
         width: 100%;
     
         display: flex;
@@ -438,7 +438,7 @@ i {
         width: 100%;
     }
     .feedbackTitle {
-        font-size: 7dvw;
+        font-size: 7vw;
         width: 100%;
         padding: 5% 0 0 6%;
     }
@@ -449,7 +449,7 @@ i {
         margin: 1% 0 3%;
     }
     .feedbbackMainText {
-        font-size: 3dvw;
+        font-size: 3vw;
         width: 95%;
         margin: 0% auto 4%;
     }
@@ -462,8 +462,8 @@ i {
         }
         .card {
             .reviewName {
-                font-size: 3dvw;
-                padding: 2dvh 0 0.5dvh 2dvw;
+                font-size: 3vw;
+                padding: 2vh 0 0.5vh 2vw;
             }
             .reviewText {
                 display: none;
@@ -495,10 +495,10 @@ i {
             width: 99%;
 
             .reviewName {
-                font-size: 3.5dvw;
+                font-size: 3.5vw;
             }
             .shortReviewText {
-                font-size: 5dvw;
+                font-size: 5vw;
             }
         }
 
@@ -530,7 +530,7 @@ i {
             left: 8%;
     
             color: var(--white);
-            font: 600 5dvw 'Plus Jakarta Sans', sans-serif;
+            font: 600 5vw 'Plus Jakarta Sans', sans-serif;
         }
         .shortTextline {
             position: absolute;
@@ -555,7 +555,7 @@ i {
             }
             p {
                 color: var(--white);
-                font-size: 4.5dvw;
+                font-size: 4.5vw;
                 font-weight: 700;
                 font-family: 'Kalnia', serif;
             }
@@ -576,23 +576,23 @@ i {
                 position: relative;
 
                 label{
-                    font-size: 3.5dvw;
+                    font-size: 3.5vw;
                     display: block;
-                    line-height: 1dvh;
+                    line-height: 1vh;
                 }
                 input{
-                    font-size: 4dvw;
+                    font-size: 4vw;
                     width: 95%;
                     height: 10%;
                     margin: 2% 0;
                 }
                 button {
-                    font-size: 4dvw;
+                    font-size: 4vw;
                     width: 20%;
                     bottom: 2%;
                 }
                 textarea {
-                    font-size: 3.5dvw;
+                    font-size: 3.5vw;
                     width: 95%;
                     height: 63%;
                     margin: 2% 0;
@@ -626,11 +626,11 @@ i {
             grid-template-rows: repeat(5, 1fr);
 
             .shortContactName, .shortContactNumber {
-                font-size: 4dvw;
+                font-size: 4vw;
             }
             .shortBindingLine {
                 font-weight: bold;
-                margin: 0 2dvw;
+                margin: 0 2vw;
             }
             .shortContactName, .shortContactNumber, .shortBindingLine {
                 color: var(--white);
@@ -644,7 +644,7 @@ i {
         }
 
         .fa-brands {
-            font-size: 7dvw;
+            font-size: 7vw;
         }
         .fa-instagram {
             right: 9%;
